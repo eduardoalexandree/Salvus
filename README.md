@@ -87,6 +87,12 @@ Representa um nó na lista encadeada de funcionários:
 
 - `employee`: Estrutura `Employee` contendo os dados do funcionário.
 - `next`: Ponteiro para o próximo nó na lista.
+  
+## Modificações futuras
+
+- `Verificação dos dados`: Criar rotinas dentros das funções para verificar a integridade dos dados que estão sendo passado na função, como por exemplo verificação de valores negativos, nomes em formatação correta e etc.
+
+- `Modificação na Lista Encadeada`: No código foi utilizada uma lista encadeada para a inserção de funcionários. Inicialmente, cogitei utilizar um array de struct `employee` para ter maior controle das posições e, com isso, acessar mais facilmente um funcionário pela posição. Entretanto, isso exigiria definir um tamanho fixo para o array, o que poderia causar um uso inadequado de alocação de memória no código. Por isso, optei pela utilização de uma lista encadeada. A lista encadeada não permite acessar um usuário pela posição dele dentro da lista sem percorrê-la inicialmente, mas oferece maior flexibilidade na alocação dinâmica de memória, evitando desperdícios. Caso a empresa tenha realmente um valor fixo de funcionários na empresa, seria possível aplicar o array onde cada posição definiria o ID do usuário, facilitando assim a busca do mesmo.
 
 ## Como Executar
 
